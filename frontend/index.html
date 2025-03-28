@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <title>TechNest - Adminpanel</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<body>
+    <header>
+        <span class="logo">TechNest</span>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">about</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <!-- manage all your business products -->
+                    <h1>TechNest,</h1>
+                    <p>A service that allow businesses to manage their items from a single page </p>
+                </div>
+                <div class="hero__content">
+                    <img src="./src/assets/image2.jpg" alt="hero" image="hero image">
+                </div>
+            </div>
+        </div>
+        <form method="POST" class="form" id="form">
+
+            <h2 class="heading">manage your stock here</h2>
+            <div class="form__container">
+                <div class="form__content">
+                    <div class="input">
+                        <input type="text" name="name" id="" placeholder="item name">
+                        <input type="text" name="category" id="" placeholder="category">
+                    </div>
+                    <div class="input">
+                        <input type="number" name="stock" id="" placeholder="stock">
+                        <input type="number" name="price" id="" placeholder="price" aria-placeholder="price">
+                    </div>
+                    <div class="btns">
+                        <button class="btn" id="add" type='button'>add</button>
+                        <button class="btn submit-btn">update</button>
+                    </div>
+                </div>
+                <div class="form__content">
+                    <textarea name="description" id="message" cols="20" rows="10"
+                        placeholder="a little description about the product"></textarea>
+                </div>
+            </div>
+        </form>
+        <!-- products -->
+        <div class="product__data">
+            <h2 id="products__head" class="heading">Products</h2>
+            <div class="container">
+                <div class="wrapper">
+                    <ul class="products" id="products">
+                    </ul>
+<div class="arrow__down">
+    <i class="fas fa-arrow-down"></i>
+</div>
+                </div>
+                <div class="wrapper" id="product__info">
+                    <div class="product__info">
+                        <div class="description">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="about-section">
+            <div class="about-card">
+                <img src="./src/assets/image3.jpg" alt="About Us Image">
+            </div>
+    
+            <div class="about-card about-text">
+                <p>We are dedicated to providing top-notch services.</p>
+                <p>Our team is passionate about innovation and quality.</p>
+                <p>Join us on our journey towards excellence.</p>
+            </div>
+        </div>
+    
+    </main>
+    <script type='module' src='src/main.js'></script>
+
+    <footer>
+        <div class="footer__socials">
+            <a href=""><i class="fab fa-facebook-f" style='color: green'></i></a>
+            <a href=""><i class="fab fa-twitter" style='color: green'></i></a>
+            <a href=""><i class="fab fa-instagram" style='color: green'></i></a>
+        </div>
+        <p>&copy; 2025, All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
